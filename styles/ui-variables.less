@@ -12,14 +12,19 @@
 
 @import "open-color.less";
 
-@primary-color: @oc-gray-9;
+@primary-color: @oc-gray-2;
+
+// Base colors
+@base-background-color: @oc-black;
+@base-border-color:     @oc-gray-9;
+@base-action-color:     @primary-color;
 
 // Text Colors
-@text-color:           @oc-gray-9;
-@text-color-subtle:    @oc-gray-6;
-@text-color-dim:       @oc-gray-5;
-@text-color-highlight: @oc-gray-9;
-@text-color-selected:  @oc-gray-9;
+@text-color:           @oc-gray-6;
+@text-color-subtle:    @oc-gray-3;
+@text-color-dim:       @oc-gray-2;
+@text-color-highlight: @oc-gray-5;
+@text-color-selected:  @oc-gray-5;
 
 @text-color-info:    @oc-blue-6;
 @text-color-success: @primary-color;
@@ -32,20 +37,16 @@
 @background-color-warning: @oc-orange-6;
 @background-color-error:   @oc-red-6;
 
-@background-color-highlight: lighten(@base-background-color, 3%);
-@background-color-selected:  lighten(@base-background-color, 5%);
+@background-color-highlight: @oc-gray-6; //darken(@base-background-color, 90%);
+@background-color-selected:  @oc-gray-6; //darken(@base-background-color, 90%);
 @app-background-color:       @base-background-color;
 
-// Base colors
-@base-background-color: #fff;
-@base-border-color:     @oc-gray-1;
-@base-action-color:     @primary-color;
 
 // Component colors
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: @app-background-color;
+@input-background-color: lighten(@base-background-color, 10%);
 @input-border-color:     @base-border-color;
 
 @tool-panel-background-color: @base-background-color;
@@ -58,7 +59,7 @@
 @panel-heading-border-color:     @base-border-color;
 
 @overlay-background-color: @base-background-color;
-@overlay-border-color:     @base-border-color;
+@overlay-border-color:     @oc-black;
 
 @button-background-color:          lighten(@base-background-color, 10%);
 @button-background-color-hover:    lighten(@button-background-color, 12%);
