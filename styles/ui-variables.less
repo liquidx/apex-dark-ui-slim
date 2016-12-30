@@ -23,8 +23,8 @@
 @text-color:           @oc-gray-6;
 @text-color-subtle:    @oc-gray-3;
 @text-color-dim:       @oc-gray-2;
-@text-color-highlight: @oc-gray-5;
-@text-color-selected:  @oc-gray-5;
+@text-color-highlight: @oc-gray-2;
+@text-color-selected:  @oc-gray-2;
 
 @text-color-info:    @oc-blue-6;
 @text-color-success: @primary-color;
@@ -37,8 +37,8 @@
 @background-color-warning: @oc-orange-6;
 @background-color-error:   @oc-red-6;
 
-@background-color-highlight: @oc-gray-6; //darken(@base-background-color, 90%);
-@background-color-selected:  @oc-gray-6; //darken(@base-background-color, 90%);
+@background-color-highlight: @oc-gray-8; //darken(@base-background-color, 90%);
+@background-color-selected:  @oc-gray-8; //darken(@base-background-color, 90%);
 @app-background-color:       @base-background-color;
 
 
@@ -55,10 +55,10 @@
 @inset-panel-background-color: @base-background-color;
 @inset-panel-border-color:     @base-border-color;
 
-@panel-heading-background-color: @base-background-color;
+@panel-heading-background-color: @base-background-color, 5%;
 @panel-heading-border-color:     @base-border-color;
 
-@overlay-background-color: @base-background-color;
+@overlay-background-color: fadeout(@base-background-color, 5%);
 @overlay-border-color:     @oc-black;
 
 @button-background-color:          lighten(@base-background-color, 10%);
@@ -70,7 +70,7 @@
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
 @tab-background-color-active: @tab-bar-background-color;
-@tab-border-color-active:     @oc-gray-9;
+@tab-border-color-active:     @oc-gray-5;
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;

@@ -19,7 +19,9 @@ atom-pane:not(.active) {
     border-top: 1px solid @base-border-color;
     margin: 0 0 10px 0;
 
-    .title;
+    .title {
+      font-weight: 300;
+    }
 
     .tab {
         color: @text-color-subtle;
@@ -29,7 +31,6 @@ atom-pane:not(.active) {
         padding-right: 10px;
         border-top: 1px solid transparent;
 
-        text-transform: uppercase;
         font-size: 11px;
 
         transition: all 150ms ease-out;
@@ -50,9 +51,8 @@ atom-pane:not(.active) {
 
         &.active {
             flex: 1;
-            color: @text-color-selected;
-            border-top: 1px solid @tab-border-color-active;
-            font-weight: bold;
+            color: @oc-blue-3;
+            border-bottom: 2px solid @tab-border-color-active;
 
             .title {
                 padding: 0;
@@ -62,7 +62,7 @@ atom-pane:not(.active) {
 
         &.modified {
             .title {
-                color: @base-action-color;
+                color: @oc-blue-1;
             }
         }
 
