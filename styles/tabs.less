@@ -26,12 +26,11 @@ atom-pane:not(.active) {
     .tab {
         color: @text-color-subtle;
         height: @tab-height;
-        line-height: @tab-height;
-        font-size: @font-size;
+        line-height: calc(@tab-height + 3px);
         padding-right: 10px;
         border-top: 1px solid transparent;
 
-        font-size: 11px;
+        font-size: 9px;
 
         transition: all 150ms ease-out;
 
